@@ -10,8 +10,11 @@ import pluginWinston from '@gasket/plugin-winston';
 import pluginNextjs from '@gasket/plugin-nextjs';
 import pluginIntl from '@gasket/plugin-intl';
 
+import pluginPrepare from './prepare';
+
 export default makeGasket({
   plugins: [
+    pluginPrepare,
 		pluginCommand,
 		pluginDocs,
 		pluginDocusaurus,
