@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@gasket/plugin-nextjs@7.2.2':
+    hash: suhs67ql27k2eelagmaf5d4zva
+    path: patches/@gasket__plugin-nextjs@7.2.2.patch
+
 importers:
 
   .:
@@ -40,7 +45,7 @@ importers:
         version: 7.2.2
       '@gasket/plugin-nextjs':
         specifier: ^7.2.2
-        version: 7.2.2(@gasket/plugin-webpack@7.2.2)(next@15.1.7(@babel/core@7.26.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 7.2.2(patch_hash=suhs67ql27k2eelagmaf5d4zva)(@gasket/plugin-webpack@7.2.2)(next@15.1.7(@babel/core@7.26.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@gasket/plugin-webpack':
         specifier: ^7.2.2
         version: 7.2.2
@@ -9034,7 +9039,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@gasket/plugin-nextjs@7.2.2(@gasket/plugin-webpack@7.2.2)(next@15.1.7(@babel/core@7.26.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gasket/plugin-nextjs@7.2.2(patch_hash=suhs67ql27k2eelagmaf5d4zva)(@gasket/plugin-webpack@7.2.2)(next@15.1.7(@babel/core@7.26.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@gasket/plugin-webpack': 7.2.2
       fastify: 4.29.0

@@ -1,0 +1,12 @@
+diff --git a/lib/actions.js b/lib/actions.js
+index 66aa7c28ec813ff709eafd436e461b43254d9478..2e2f4c79e0528700f114ad194c719a75d555e18b 100644
+--- a/lib/actions.js
++++ b/lib/actions.js
+@@ -4,6 +4,7 @@ const nextRoute = require('./utils/next-route');
+ /** @type {import('@gasket/core').ActionHandler<'getNextConfig'>} */
+ function getNextConfig(gasket, nextConfig) {
+   return async function setupNextConfig(phase, { defaultConfig }) {
++    gasket.config = await gasket.execWaterfall('prepare', gasket.config);
+     let baseConfig;
+     if (nextConfig instanceof Function) {
+       baseConfig = await nextConfig(phase, { defaultConfig });
