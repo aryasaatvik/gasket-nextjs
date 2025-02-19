@@ -18,7 +18,7 @@ const plugin: Plugin = {
   name: 'prepare',
   actions: {
     getPrepareData: async (gasket) => {
-      const message = process.env.MESSAGE;
+      const message = process.env.NEXT_PUBLIC_MESSAGE;
       const prepareData = gasket.config.prepareData;
       return {
         message: `env: ${message}  config: ${prepareData?.message} ${new Date().getTime()}`
@@ -31,7 +31,7 @@ const plugin: Plugin = {
       config.prepareData = {
         message: 'Hello, world!'
       }
-      process.env.MESSAGE = 'Hello, world!';
+      process.env.NEXT_PUBLIC_MESSAGE = 'Hello, world!';
       return config;
     }
   }
