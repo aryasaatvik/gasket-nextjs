@@ -19,7 +19,7 @@ async function IndexPage() {
     <div style={pageStyle}>
       <GasketEmblem style={logoStyle} />
       <Component />
-      <h1>Welcome to Gasket!</h1>
+      <h1>Welcome to Gasket 2!</h1>
       <p>To get started, edit <code>app/page.tsx</code> and save to reload.</p>
       <p><a href='https://gasket.dev'>Learn Gasket</a></p>
       <p>{prepareData.message}</p>
