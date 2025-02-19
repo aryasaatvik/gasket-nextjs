@@ -31,7 +31,9 @@ const plugin: Plugin = {
       config.prepareData = {
         message: 'Hello, world!'
       }
-      process.env.NEXT_PUBLIC_MESSAGE = 'Hello, world!';
+      Object.assign(process.env, {
+        NEXT_PUBLIC_MESSAGE: 'Hello, world!'
+      });
       return config;
     }
   }
