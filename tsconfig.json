@@ -18,7 +18,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/gasket": ["./dist/gasket.js"]
+      "@/*": ["./*"]
     },
     "allowJs": true,
     "strict": false,

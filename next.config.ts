@@ -1,5 +1,5 @@
 import type { NextConfig } from 'next'
-import gasket from './gasket';
+import gasket from '@/gasket';
 
 const nextConfig: NextConfig = gasket.actions.getNextConfig();
 

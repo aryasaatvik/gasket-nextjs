@@ -10,9 +10,9 @@ import pluginWinston from '@gasket/plugin-winston';
 import pluginNextjs from '@gasket/plugin-nextjs';
 import pluginIntl from '@gasket/plugin-intl';
 
-import pluginPrepare from './prepare';
+import pluginPrepare from '@/plugins/prepare';
 
-export default makeGasket({
+const gasket = makeGasket({
   plugins: [
     pluginPrepare,
 		pluginCommand,
@@ -34,3 +34,5 @@ export default makeGasket({
     managerFilename: 'intl.ts',
   },
 } as GasketConfigDefinition);
+
+export default gasket;
