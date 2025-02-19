@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { CSSProperties } from 'react';
 import GasketEmblem from '@gasket/assets/react/gasket-emblem.js';
-import type { Metadata } from 'next';
 import gasket from '@/gasket';
 import { Component } from '@/component';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'gasket-ts-nextjs',
@@ -18,7 +18,7 @@ async function IndexPage() {
   return (
     <div style={pageStyle}>
       <GasketEmblem style={logoStyle} />
-      <Component />
+      {/* <Component /> */}
       <h1>Welcome to Gasket!</h1>
       <p>To get started, edit <code>app/page.tsx</code> and save to reload.</p>
       <p><a href='https://gasket.dev'>Learn Gasket</a></p>
