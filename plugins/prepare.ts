@@ -1,8 +1,8 @@
-import { Plugin } from "@gasket/core";
+import type { Plugin } from "@gasket/core";
 
 declare module '@gasket/core' {
   interface GasketConfig {
-    prepareData: {
+    prepareData?: {
       message: string;
     }
   }
@@ -18,6 +18,7 @@ const plugin: Plugin = {
   name: 'prepare',
   actions: {
     getPrepareData: async (gasket) => {
+      await gasket.isReady;
       const message = process.env.NEXT_PUBLIC_MESSAGE;
       const prepareData = gasket.config.prepareData;
       return {

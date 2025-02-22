@@ -9,6 +9,7 @@
     "allowSyntheticDefaultImports": true,
     "allowImportingTsExtensions": true,
     "outDir": "dist",
+    "sourceMap": true,
     "lib": [
       "esnext"
     ],
